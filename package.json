@@ -1,0 +1,22 @@
+{
+  "name": "shofe",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Shofe — logistics platform (drivers, fleet owners, jobs, tracking).",
+  "packageManager": "pnpm@10.33.0",
+  "engines": {
+    "node": ">=20.11"
+  },
+  "scripts": {
+    "dev:web": "pnpm --filter @shofe/web dev",
+    "dev:mobile": "pnpm --filter @shofe/mobile dev",
+    "build:web": "pnpm --filter @shofe/web build",
+    "build:mobile": "pnpm --filter @shofe/mobile build",
+    "lint": "pnpm -r --if-present lint",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "appwrite:sync": "pnpm --filter @shofe/infra-appwrite sync"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}
